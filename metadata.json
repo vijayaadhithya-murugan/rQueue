@@ -1,0 +1,5 @@
+{
+  "name": "Ticket Triage Genie",
+  "description": "An intelligent tool to automatically categorize, prioritize, and suggest assignees for support tickets using AI. Import tickets via CSV or text, and get instant, actionable triage results to streamline your support workflow.",
+  "requestFramePermissions": []
+}
