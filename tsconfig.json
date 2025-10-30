@@ -11,8 +11,12 @@
     ],
     "skipLibCheck": true,
     "types": [
-      "node"
+      "node",
+      "jest",
+      "@testing-library/jest-dom"
     ],
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
     "moduleResolution": "bundler",
     "isolatedModules": true,
     "moduleDetection": "force",
