@@ -27,7 +27,7 @@ const App: React.FC = () => {
       setTriagedTickets(results);
     } catch (e: any) {
       console.error(e);
-      setError('Failed to triage tickets. Please check the console for details.');
+      setError('Failed to queue tickets. Please check the console for details.');
     } finally {
       setIsLoading(false);
     }
@@ -88,7 +88,7 @@ const App: React.FC = () => {
 
 
   return (
-    <div className="min-h-screen bg-gray-900 text-gray-200 font-sans">
+    <div className="bg-gray-900 text-gray-200 font-sans">
       <Header onHelpClick={() => setIsModalOpen(true)} />
       
       <main className="p-4 sm:p-6 lg:p-8 max-w-7xl mx-auto">
@@ -123,7 +123,7 @@ const App: React.FC = () => {
 
           {/* Right Column */}
           <div className="lg:col-span-8">
-            <div className="bg-gray-800 rounded-xl shadow-lg min-h-[600px] p-1">
+            <div className="bg-gray-800 rounded-xl shadow-lg min-h-[500px] p-1">
               {error && <div className="m-6 p-4 text-center text-red-400 bg-red-900/50 rounded-lg">{error}</div>}
               <TicketList tickets={triagedTickets} rawTickets={rawTickets} isLoading={isLoading} />
             </div>

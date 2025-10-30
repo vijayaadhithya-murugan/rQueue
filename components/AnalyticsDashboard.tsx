@@ -18,11 +18,10 @@ const URGENCY_COLORS: { [key: string]: string } = {
 
 
 const CustomTooltip = ({ active, payload, label }: any) => {
-  console.log('Tooltip payload:', payload,active, label);
   if (active && payload && payload.length) {
     return (
       <div className="bg-gray-700/80 backdrop-blur-sm p-2 border border-gray-600 rounded-md text-sm">
-        <p className="label text-white">{`${label} : ${payload[0].value}`}</p>
+        <p className="label text-white">{`${label || payload[0].name} : ${payload[0].value}`}</p>
       </div>
     );
   }
@@ -33,7 +32,7 @@ const AnalyticsDashboard: React.FC<AnalyticsDashboardProps> = ({ categoryData, u
   if (!isOpen) return null;
   return (
     <div className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-4" onClick={onClose}>
-          <div className="bg-gray-800 rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto border border-gray-700" onClick={(e) => e.stopPropagation()}>
+          <div className="bg-gray-800 rounded-xl shadow-2xl max-w-2xl w-full border border-gray-700" onClick={(e) => e.stopPropagation()}>
             <div className="p-4 sticky top-0 bg-gray-800 border-b border-gray-700 flex justify-between items-center">
               <h2 className="text-2xl font-bold text-white">Analytics</h2>
               <button onClick={onClose} className="text-gray-400 hover:text-white">
