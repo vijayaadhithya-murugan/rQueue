@@ -1,12 +1,9 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import type { RawTicket, TriageResult } from '../types';
 import { CATEGORIES, URGENCY_LEVELS } from '../constants';
+import { getApiKey } from './apiKeyService';
 
-const API_KEY = process.env.API_KEY;
-if (!API_KEY) {
-  throw new Error("API_KEY environment variable not set");
-}
-
+const API_KEY = getApiKey();
 const ai = new GoogleGenAI({ apiKey: API_KEY });
 
 const responseSchema = {
