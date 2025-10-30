@@ -22,16 +22,13 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({ isOpen, onClos
         <div className="p-6 space-y-6 text-gray-300">
           <section>
             <h3 className="text-lg font-semibold text-indigo-400 mb-2">1. Import Your Tickets</h3>
-            <p>You can import tickets in two ways:</p>
-            <ul className="list-disc list-inside mt-2 pl-2 space-y-1">
-              <li><strong>Upload a file:</strong> Supports CSV or plain text (.txt) files. For CSVs, ensure you have columns named <code>id</code>, <code>subject</code>, <code>body</code>, and <code>createdAt</code>.</li>
-              <li><strong>Paste text:</strong> Directly paste ticket content into the text area. The app will treat it as a single ticket or parse it if it's in CSV format.</li>
-            </ul>
+              <strong>Upload file:</strong> 
+              <p>Supports CSV or plain text (.txt) files. For CSVs, ensure you have columns named <code>id</code>, <code>subject</code>, <code>body</code>, and <code>createdAt</code></p>
           </section>
 
           <section>
-            <h3 className="text-lg font-semibold text-indigo-400 mb-2">2. AI-Powered Triage</h3>
-            <p>Once imported, the data is sent to a powerful AI model (Google's Gemini) which analyzes each ticket based on a specific set of rules.</p>
+            <h3 className="text-lg font-semibold text-indigo-400 mb-2">2. AI-Powered Queue</h3>
+            <p>Once imported, the data is sent to a powerful AI model which analyzes each ticket based on a specific set of rules.</p>
             <div className="mt-3 bg-gray-900/50 p-4 rounded-lg border border-gray-700">
               <h4 className="font-semibold text-white">The AI assesses:</h4>
               <ul className="list-disc list-inside mt-2 pl-2 space-y-1 text-sm">
@@ -45,7 +42,7 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({ isOpen, onClos
 
           <section>
             <h3 className="text-lg font-semibold text-indigo-400 mb-2">3. Review and Export</h3>
-            <p>The triaged tickets are displayed in a clean, easy-to-read list. You can quickly see the AI's suggestions and reasoning.</p>
+            <p>The tickets are displayed in a clean, easy-to-read list. You can quickly see the AI's suggestions and reasoning.</p>
              <ul className="list-disc list-inside mt-2 pl-2 space-y-1">
               <li><strong>Analytics Dashboard:</strong> View charts that break down your tickets by category and urgency.</li>
               <li><strong>Export to CSV:</strong> Once you're happy with the triage, you can export the results, including all the AI's suggestions, as a CSV file for your records or to import into another system.</li>
