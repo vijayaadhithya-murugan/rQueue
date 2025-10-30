@@ -28,13 +28,13 @@ Once imported, the data is sent to a powerful AI model which analyzes each ticke
 
 The AI assesses:
 
-Category: Assigns labels like Bug Report, Feature Request, Billing Inquiry, Technical Support, or Other.
+**Category**: Assigns labels like Bug Report, Feature Request, Billing Inquiry, Technical Support, or Other.
 
-Urgency (P1–P4): Prioritizes based on keywords (e.g., “outage”, “critical error”, “delay”) and the age of the ticket.
+**Urgency (P1–P4)**: Prioritizes based on keywords (e.g., “outage”, “critical error”, “delay”) and the age of the ticket.
 
-Suggested Assignee: Recommends the best team (e.g., Frontend, Backend, DevOps, Testing, Billing) to handle the issue.
+**Suggested Assignee**: Recommends the best team (e.g., Frontend, Backend, DevOps, Testing, Billing) to handle the issue.
 
-Confidence: Flags tickets that are ambiguous or lack sufficient details so you can review them manually.
+**Confidence**: Flags tickets that are ambiguous or lack sufficient details so you can review them manually.
 
 3. Review and Export
 
