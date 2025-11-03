@@ -70,6 +70,73 @@
 
    - Technical Support → Support Team
 
+## Running Tests
+
+```bash
+# Run all tests once
+npm test
+
+# Run tests in watch mode
+npm run test:watch
+
+# Run tests with coverage report
+npm run test:coverage
+```
+
+```bash
+npm test                   # Run main tests (components + utils)
+npm run test:watch         # Run tests in watch mode
+npm run test:coverage      # Generate coverage report
+npm run test:components    # Run only component tests
+npm run test:utils         # Run only utility tests
+npm run test:services      # Run only service tests
+npm run test:app           # Run only app tests
+npm run test:all           # Run all tests including problematic ones
+```
+# Project Structure
+
+This project follows a clean separation between source code and tests:
+
+```
+rQueue/
+├── src/                          # All source code
+│   ├── components/               # React components
+│   │   ├── AnalyticsDashboard.tsx
+│   │   ├── Header.tsx
+│   │   ├── HowItWorksModal.tsx
+│   │   ├── icons.tsx
+│   │   ├── TicketCard.tsx
+│   │   ├── TicketImporter.tsx
+│   │   └── TicketList.tsx
+│   ├── services/                 # API and external services
+│   │   └── geminiService.ts
+│   ├── utils/                    # Utility functions
+│   │   └── ticketHelpers.ts
+│   ├── App.tsx                   # Main application component
+│   ├── constants.ts              # Application constants
+│   ├── index.css                 # Global styles
+│   ├── metadata.json             # Application metadata
+│   └── types.ts                  # TypeScript type definitions
+├── test/                         # All test files
+│   ├── app/                      # App-level tests
+│   │   └── App.test.tsx
+│   ├── components/               # Component tests
+│   │   ├── Header.test.tsx
+│   │   └── TicketCard.test.tsx
+│   ├── services/                 # Service tests
+│   │   └── geminiService.test.ts
+│   ├── utils/                    # Utility tests
+│   │   └── ticketHelpers.test.ts
+│   └── setupTests.ts             # Test configuration
+├── index.html                    # HTML entry point
+├── index.tsx                     # React entry point
+├── jest.config.js                # Jest configuration
+├── package.json                  # Dependencies and scripts
+├── tailwind.config.js            # Tailwind CSS configuration
+├── tsconfig.json                 # TypeScript configuration
+├── vite.config.ts                # Vite configuration
+└── README.md                     # Project documentation
+```
 
 ## Screenshots
 
