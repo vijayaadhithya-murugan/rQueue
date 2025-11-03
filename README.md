@@ -138,6 +138,17 @@ rQueue/
 └── README.md                     # Project documentation
 ```
 
+## Completed Scenarios
+
+1. Import tickets (CSV or text).
+2. Categorize tickets into 3–5 categories (keyword rules).
+3. Assign urgency (P1–P4) based on keywords + age.
+4. Suggest next assignee/team.
+5. Import 10–20 tickets → categories + urgency applied.
+6. Low-confidence tickets flagged.
+7. Suggested next action visible.
+8. Export results as CSV
+
 ## Screenshots
 
 1. Queued Tickets
