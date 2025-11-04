@@ -59,7 +59,7 @@ const TicketImporter: React.FC<TicketImporterProps> = ({ onFileLoaded, isLoading
       reader.readAsText(file);
     }
   }, [onFileLoaded, parseContent]);
-  
+
   return (
     <div className="bg-gray-800 rounded-xl shadow-lg p-6 space-y-4">
       <h2 className="text-xl font-bold text-white">Import Tickets</h2>
@@ -68,7 +68,7 @@ const TicketImporter: React.FC<TicketImporterProps> = ({ onFileLoaded, isLoading
         <div className="space-y-4">
           <label htmlFor="file-upload" className="relative cursor-pointer block w-full text-center p-6 border-2 border-dashed border-gray-600 rounded-lg hover:border-indigo-500 transition-colors">
             <UploadIcon className="mx-auto h-12 w-12 text-gray-500" />
-            <span className="mt-2 block text-sm font-semibold text-gray-300">Upload a CSV or text file</span>
+            <span className="mt-2 block text-sm font-semibold text-gray-300">Upload a CSV file</span>
             <input id="file-upload" name="file-upload" type="file" className="sr-only" onChange={handleFileChange} accept=".csv,.txt" disabled={isLoading} />
           </label>
         </div>
