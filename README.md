@@ -10,7 +10,7 @@
 
 ## View Application
 
-**URL**
+[https://vijayaadhithya-murugan.github.io/rQueue/](https://vijayaadhithya-murugan.github.io/rQueue/)
 
 ## User Guide
 
@@ -50,7 +50,7 @@
 
 ## How It Works
 
-1. Import tickets (CSV or plain text).
+1. Import tickets - CSV.
 
 2. Run categorization — keywords (like “bug”, “invoice”, “request”) map tickets to one of the five defined categories.
 

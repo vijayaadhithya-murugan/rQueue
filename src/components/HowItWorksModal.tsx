@@ -23,7 +23,7 @@ export const HowItWorksModal: React.FC<HowItWorksModalProps> = ({ isOpen, onClos
           <section>
             <h3 className="text-lg font-semibold text-indigo-400 mb-2">1. Import Your Tickets</h3>
               <strong>Upload file:</strong> 
-              <p>Supports CSV or plain text (.txt) files. For CSVs, ensure you have columns named <code>id</code>, <code>subject</code>, <code>body</code>, and <code>createdAt</code></p>
+              <p>Supports CSV. For CSVs, ensure you have columns named <code>id</code>, <code>subject</code>, <code>body</code>, and <code>createdAt</code></p>
           </section>
 
           <section>
