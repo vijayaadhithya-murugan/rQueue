@@ -46,7 +46,7 @@
    Visualizes category and urgency trends over time.
 
    **Export to CSV**:
-   Once you’re happy with the triage results, export the categorized and prioritized data (including AI’s confidence and suggested team) as a .csv file for reporting or integration with other tools.
+   Once you’re happy with the rQueue results, export the categorized and prioritized data (including AI’s confidence and suggested team) as a .csv file for reporting or integration with other tools.
 
 ## How It Works
 

@@ -46,7 +46,7 @@ export const triageTickets = async (tickets: RawTicket[]): Promise<TriageResult[
   const currentDate = new Date().toISOString();
 
   const prompt = `
-    You are the "Ticket Triage Genie," an expert AI assistant for a software company.
+    You are the "rQueue," an expert AI assistant for a software company.
     Your task is to analyze a batch of support tickets and return a structured JSON array with your triage assessment for each one.
     The current date is ${currentDate}. Consider the ticket's 'createdAt' date to determine its age. Older, unresolved tickets might require higher urgency.
 
